@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "sotrace"
+version = "0.1.0"
+description = "Package for track dependencies in binary or process"
+authors = ["Dakoro <david.korobetski@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fire = "^0.6.0"
+loguru = "^0.7.2"
+[tool.poetry.scripts]
+sotrace = "sotrace:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
